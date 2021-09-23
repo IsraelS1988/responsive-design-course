@@ -1,0 +1,13 @@
+
+/*
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografía
+4. Visuales
+5. Otros
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
