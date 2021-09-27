@@ -277,20 +277,10 @@ main{
     max-width: 400px;
     height: 150px;
     padding: 15px;
-    margin: 15 auto;
+    margin: 15px auto 20px;
     background-color: #282623;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-}
-.product-detail--card .clock {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url('./assets/icons/clock.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .product--card-title{
     margin-bottom: 15px;
@@ -305,4 +295,60 @@ main{
     font-family: DM Sans, sans-serif;
     font-weight: 500;
     height: 1.8rem;
+}
+.product-detail--card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/clock.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.product-detail--card .eye {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/eye.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.product-detail--card .check {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/check-circle.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.product-detail--card .dollar {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/dollar-sign.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bitoinc-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bitoinc-img-container h2 {
+    text-align: center;
+    padding-top: 50px;
+    color: var(--just-white);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
 }
