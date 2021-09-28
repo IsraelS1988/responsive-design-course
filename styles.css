@@ -27,6 +27,7 @@
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 header{
     position: relative;
@@ -340,6 +341,7 @@ main{
     width: 100%;
     min-width: 320px;
     height: 50vh;
+    margin: 0 auto;
     background-image: url('./assets/img/bitcoinbaby2x.jpg');
     background-size: cover;
     background-position: center;
@@ -351,4 +353,32 @@ main{
     color: var(--just-white);
     font-size: 2.4rem;
     line-height: 2.6rem;
+}
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+   
+}
+.plans--title h2 {
+    padding-top: 50px; 
+    font-size: 2.4rem;
+    font-weight: bold;
+    /*height: 2.6rem;*/
+    color: var(--black); 
+    
+}
+.plans--title p{
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+color: #757575 ;
 }
