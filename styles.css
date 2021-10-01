@@ -383,13 +383,22 @@ main{
   line-height: 1.8rem;
   color: #757575 ;
 }
-.plans-container--card {
+.plans-container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: proximity;
+
+}
+.plans-container--card1 {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 30px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -397,30 +406,42 @@ main{
 }
 .recomended {
     position: absolute;
-    width: 50%;
-    height: 30px;
-    text-align: center;
-    left: calc(50% - 50px);
+    width: 120px;
+    height: 31px;
     background-color: var(--bitcoin-orange);
-    font-size: 1.4rem;
     color: var(--just-white);
-    font-weight: bold;
     border-radius: 10px;
-    top: -9px;
-}
-.plan-info-container {
-    padding-top: 35px;
+    left: calc(50% - 60px); 
+    padding: 6px;
+    top: -15px;  
+    font-size: 1.2rem;    
+    font-weight: bold; 
 }
 .plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.4rem;
+    color: black;
     margin-bottom: 10px;
-    font-size: 1.3rem;
+    
 }
 .plan-card--price {
-    font-size: 3rem;
+    position: relative;
+    padding: 5px 0;
+    font-size: 5.2rem;
     font-weight: bold;
+    line-height: 6.3rem;
+    color: black;
+    position: relative;
 }
 .plan-card--price span {
-    font-size: 1.3rem;
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 300;
+    position: absolute;
+    top: -8px;
+    left: calc(50% - 40px);
 }
 .plan-card--saving {
     width: 100%;
@@ -428,16 +449,25 @@ main{
     margin-bottom: 10px;
 }
 .plan-card--ca {
-    width: 80%;
+    width: 158px;
     height: 40px;
+    margin-top: 20px;
+    font-weight: bold;
     background-color: var(--soft-orange);
     border: solid 2px var(--bitcoin-orange);
+    border-radius: 8px;
 }
-.card-button--icon {
-    width: 15px;
-    height: 15px;
-    background-image: url(./assets/icons/right-arrow.svg);
+#plan-button:hover{
+    box-shadow: 2px -2px gray;
+    cursor: pointer;
+}
+.plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    vertical-align: text-top;    
 }
